@@ -1,0 +1,60 @@
+﻿@model ToDoList.Model.ToDoListModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4></h4>
+    <hr />
+    <dl class="row">
+        <dt style="display: none;" class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Index)
+        </dt>
+        <dd style="display: none;" class = "col-sm-10">
+            @Html.DisplayFor(model => model.Index)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+        <dt style="display: none;" class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ToDoStatus)
+        </dt>
+        <dd style="display: none;" class = "col-sm-10">
+            @Html.DisplayFor(model => model.ToDoStatus)
+        </dd>
+        <dt style="display: none;" class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TodoDateTime)
+        </dt>
+        <dd style="display: none;" class = "col-sm-10">
+            @Html.DisplayFor(model => model.TodoDateTime)
+        </dd>
+        <dt style="display: none;" class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IsBusy)
+        </dt>
+        <dd style="display: none;" class = "col-sm-10">
+            @Html.DisplayFor(model => model.IsBusy)
+        </dd>
+        <dt style="display: none;" class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd style="display: none;" class = "col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Index }) |
+    <a asp-action="Index">Back to List</a>
+</div>
